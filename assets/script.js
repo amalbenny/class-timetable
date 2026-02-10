@@ -40,12 +40,22 @@
   function nextDay() { currentDayIndex = (currentDayIndex + 1) % days.length; renderDay(); }
 
   /* ================= GESTURE NAVIGATION ================= */
-  let startX = 0;
-  document.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+  let startX = 0, startY = 0;
+
+  document.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  });
+
   document.addEventListener("touchend", e => {
-    const diff = e.changedTouches[0].clientX - startX;
-    if (diff > 80) prevDay();
-    if (diff < -80) nextDay();
+    const diffX = e.changedTouches[0].clientX - startX;
+    const diffY = e.changedTouches[0].clientY - startY;
+    
+    // Only trigger swipe if horizontal movement is dominant
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 80) {
+      if (diffX > 0) prevDay();
+      else nextDay();
+    }
   });
 
   /* ================= LIVE TRACKING ================= */
