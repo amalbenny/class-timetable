@@ -105,6 +105,6 @@ main{ padding: 16px;}
 .project{
     background-color: var(--project);
 }
-.free, .sp{
+.free, .sp, .break{
     background-color: var(--free);
 }
