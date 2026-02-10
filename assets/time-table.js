@@ -8,7 +8,7 @@
       { start: "13:25", end: "14:15", subject: "Project Phase II", type: "project" },
       { start: "14:15", end: "15:00", subject: "Project Planning & Management", type: "elective" },
       { start: "15:15", end: "16:00", subject: "Composite Materials", type: "elective" },
-      { start: "16:00", end: "16:30", subject: "Project Phase II", type: "project" }
+      { start: "16:00", end: "16:30", subject: "Project Phase II", type: "sp" }
     ],
     Tuesday: [
       { start: "09:00", end: "09:50", subject: "Project Planning & Management", type: "elective" },
@@ -18,7 +18,7 @@
       { start: "13:25", end: "14:15", subject: "Micro & Nano Manufacturing", type: "elective" },
       { start: "14:15", end: "15:00", subject: "Composite Materials", type: "elective" },
       { start: "15:15", end: "16:00", subject: "MET402 – Mechatronics", type: "theory" },
-      { start: "16:00", end: "16:30", subject: "Professional Societies", type: "others" }
+      { start: "16:00", end: "16:30", subject: "Professional Societies", type: "sp" }
     ],
     Wednesday: [
       { start: "09:00", end: "09:50", subject: "MET404 – Comprehensive Viva", type: "theory" },
@@ -28,7 +28,7 @@
       { start: "13:25", end: "14:15", subject: "Project Phase II", type: "project" },
       { start: "14:15", end: "15:00", subject: "Project Phase II", type: "project" },
       { start: "15:15", end: "16:00", subject: "Project Phase II", type: "project" },
-      { start: "16:00", end: "16:30", subject: "Project Phase II", type: "project" }
+      { start: "16:00", end: "16:30", subject: "Project Phase II", type: "sp" }
     ],
     Thursday: [
       { start: "09:00", end: "09:50", subject: "MET402 – Mechatronics", type: "theory" },
@@ -38,7 +38,7 @@
       { start: "13:25", end: "14:15", subject: "Project Phase II", type: "project" },
       { start: "14:15", end: "15:00", subject: "Project Phase II", type: "project" },
       { start: "15:15", end: "16:00", subject: "Micro & Nano Manufacturing", type: "elective" },
-      { start: "16:00", end: "16:30", subject: "Mentoring & Professional Societies", type: "others" }
+      { start: "16:00", end: "16:30", subject: "Mentoring & Professional Societies", type: "sp" }
     ],
     Friday: [
       { start: "09:00", end: "16:30", subject: "Project Phase II (Full Day)", type: "project" }
