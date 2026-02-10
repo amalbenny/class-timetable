@@ -11,9 +11,7 @@
     --active: limegreen;
 }
 
-*{
-    box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 body{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: var(--bg);
@@ -99,7 +97,7 @@ main{ padding: 16px;}
     background-color: var(--theory);
 }
 .elective{
-    background-color: var(--elective);
+    background-color: var(--elective); color: #333333;
 }
 .lab{
     background-color: var(--lab);
@@ -107,6 +105,6 @@ main{ padding: 16px;}
 .project{
     background-color: var(--project);
 }
-.free{
+.free, .sp{
     background-color: var(--free);
 }
