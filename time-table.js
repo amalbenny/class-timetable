@@ -1,4 +1,6 @@
   /* ================= TIMETABLE DATA ================= */
+
+  // Note: Use lower case for type values: "theory", "elective", "project", "break", "sp", "free"
   const timetable = {
     Monday: [
       { start: "09:00", end: "09:50", subject: "MET404 – Comprehensive Viva", type: "theory" },
@@ -54,8 +56,5 @@
     ],
     Friday: [
       { start: "09:00", end: "16:30", subject: "Project Phase II (Full Day)", type: "project" }
-    ],
-    Saturday: [ { start: "00:00", end: "23:59", subject: "Free Day", type: "free" } ],
-    
-    Sunday: [ { start: "00:00", end: "23:59", subject: "Free Day", type: "free" } ]
+    ]
   };
