@@ -1,5 +1,6 @@
   const days = Object.keys(timetable);
-  let currentDayIndex = new Date().getDay() - 1;
+  const now = new Date();
+  let currentDayIndex = now.getDay() - 1;
   if (currentDayIndex < 0 || currentDayIndex > 5) currentDayIndex = 0;
 
   function timeToMinutes(t) {
@@ -11,7 +12,6 @@
     const day = days[currentDayIndex];
     document.getElementById("dayinfo").innerText = day;
 
-    const now = new Date();
     const nowMin = now.getHours() * 60 + now.getMinutes();
 
     const container = document.getElementById("timetable");
@@ -62,8 +62,10 @@
   setInterval(renderDay, 60000);
 
   /* ================= SERVICE WORKER ================= */
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
-  }
 
   renderDay();
+  // 1. Find the first element with the 'active' class and scroll it into view
+  const activeElement = document.querySelector('.period.active');
+  if (activeElement) {
+    activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
