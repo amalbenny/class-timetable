@@ -1,7 +1,7 @@
   const days = Object.keys(timetable);
   const now = new Date();
   let currentDayIndex = now.getDay() - 1;
-  if (currentDayIndex < 0 || currentDayIndex > 5) currentDayIndex = 0;
+  if (currentDayIndex < 0 || currentDayIndex >= days.length) currentDayIndex = 0;
 
   function timeToMinutes(t) {
     const [h, m] = t.split(":").map(Number);
