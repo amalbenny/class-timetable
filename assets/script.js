@@ -62,8 +62,10 @@
   setInterval(renderDay, 60000);
 
   /* ================= SERVICE WORKER ================= */
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/assets/sw.js");
-  }
 
   renderDay();
+  // 1. Find the first element with the 'active' class and scroll it into view
+  const activeElement = document.querySelector('.period.active');
+  if (activeElement) {
+    activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }

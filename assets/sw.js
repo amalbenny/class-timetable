@@ -1,4 +1,4 @@
-const CACHE_NAME = 'timetable-v1';
+const CACHE_NAME = 'timetable-v2';
 const urlsToCache = [
   './',
   '../index.html',
@@ -56,10 +56,6 @@ self.addEventListener('fetch', event => {
               });
             return response;
           });
-      })
-      .catch(() => {
-        // Return a fallback page if offline and no cache
-        return caches.match('../index.html');
       })
   );
 });
