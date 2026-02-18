@@ -6,8 +6,15 @@ const urlsToCache = [
   './main.css',
   './script.js',
   './sw.js',
- // './portrait.css',
- // './landscape.css'
+  './favicon-96x96.png',
+  './favicon.svg',
+  './favicon.ico',
+  './apple-touch-icon.png',
+  './site.webmanifest'
+ /* Not used currently, but can be added if separate styles are needed for portrait and landscape orientations:
+ * './portrait.css',
+ * './landscape.css' 
+ */
 ];
 
 // Install event - cache essential files

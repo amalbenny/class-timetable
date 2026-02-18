@@ -62,8 +62,6 @@
   /* ================= LIVE TRACKING ================= */
   setInterval(renderDay, 60000);
 
-  /* ================= SERVICE WORKER ================= */
-
   renderDay();
   // 1. Find the first element with the 'active' class and scroll it into view
   const activeElement = document.querySelector('.period.active');
