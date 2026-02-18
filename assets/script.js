@@ -1,6 +1,5 @@
   const days = Object.keys(timetable);
-  const now = new Date();
-  let currentDayIndex = now.getDay() - 1;
+  let currentDayIndex = new Date().getDay() - 1;
   if (currentDayIndex < 0 || currentDayIndex >= days.length) currentDayIndex = 0;
 
   function timeToMinutes(t) {
@@ -12,6 +11,8 @@
     const day = days[currentDayIndex];
     document.getElementById("dayinfo").innerText = day;
 
+    // Update variable now with live tracker
+    const now = new Date();
     const nowMin = now.getHours() * 60 + now.getMinutes();
 
     const container = document.getElementById("timetable");
