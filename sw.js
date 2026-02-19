@@ -1,4 +1,4 @@
-const CACHE_NAME = 'timetable-v2.1';
+const CACHE_NAME = 'timetable-v2.2';
 const urlsToCache = [
   './',
   './index.html',
@@ -10,12 +10,7 @@ const urlsToCache = [
   './assets/favicon.svg',
   './assets/favicon.ico',
   './assets/apple-touch-icon.png',
-  './assets/site.webmanifest',
-  './assets'
- /* Not used currently, but can be added if separate styles are needed for portrait and landscape orientations:
- * './portrait.css',
- * './landscape.css' 
- */
+  './assets/site.webmanifest'
 ];
 
 // Install event - cache essential files
