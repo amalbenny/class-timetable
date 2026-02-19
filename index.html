@@ -9,7 +9,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Timetable">
-    <title>Class Timetable v2.0</title>
+    <title>Class Timetable v2.2</title>
 
     <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -21,14 +21,11 @@
     <link rel="stylesheet" href="assets/main.css">
     <!--  If separate design is needed for portrait and landscape orientation,
     uncomment the below lines and use portrait.css and landscape.css in assets folder -->
-    <!--
-    <link rel="stylesheet" media="all and (orientation:portrait)" href="assets/portrait.css">
-    <link rel="stylesheet" media="all and (orientation:landscape)" href="assets/landscape.css">
-    -->
+    <!-- <link rel="stylesheet" media="all and (orientation:portrait)" href="assets/portrait.css"> <link rel="stylesheet" media="all and (orientation:landscape)" href="assets/landscape.css"> -->
 </head>
 <body>
     <header>
-        <h1>Class TimeTable v2.0</h1>
+        <h1>Class TimeTable v2.2</h1>
         <button onclick="prevDay()">&#8249;</button>
         <span id="dayinfo"></span>
         <button onclick="nextDay()">&#8250;</button>
@@ -40,7 +37,7 @@
     <script src="assets/script.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('assets/sw.js')
+            navigator.serviceWorker.register('sw.js')
                 .then(reg => console.log('Service Worker registered successfully:', reg))
                 .catch(err => console.log('Service Worker registration failed:', err));
         }

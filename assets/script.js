@@ -1,5 +1,6 @@
   const days = Object.keys(timetable);
   let currentDayIndex = new Date().getDay() - 1;
+  // Handle weekends (Saturday=5, Sunday=-1) and out of range days
   if (currentDayIndex < 0 || currentDayIndex >= days.length) currentDayIndex = 0;
 
   function timeToMinutes(t) {
