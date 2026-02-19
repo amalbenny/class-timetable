@@ -1,16 +1,17 @@
-const CACHE_NAME = 'timetable-v2';
+const CACHE_NAME = 'timetable-v2.1';
 const urlsToCache = [
   './',
-  '../index.html',
-  '../time-table.js',
-  './main.css',
-  './script.js',
+  './index.html',
+  './time-table.js',
+  './assets/main.css',
+  './assets/script.js',
   './sw.js',
-  './favicon-96x96.png',
-  './favicon.svg',
-  './favicon.ico',
-  './apple-touch-icon.png',
-  './site.webmanifest'
+  './assets/favicon-96x96.png',
+  './assets/favicon.svg',
+  './assets/favicon.ico',
+  './assets/apple-touch-icon.png',
+  './assets/site.webmanifest',
+  './assets'
  /* Not used currently, but can be added if separate styles are needed for portrait and landscape orientations:
  * './portrait.css',
  * './landscape.css' 
