@@ -1,7 +1,7 @@
   const days = Object.keys(timetable);
-  const now = new Date();
-  let currentDayIndex = now.getDay() - 1;
-  if (currentDayIndex < 0 || currentDayIndex > 5) currentDayIndex = 0;
+  let currentDayIndex = new Date().getDay() - 1;
+  // Handle weekends (Saturday=5, Sunday=-1) and out of range days
+  if (currentDayIndex < 0 || currentDayIndex >= days.length) currentDayIndex = 0;
 
   function timeToMinutes(t) {
     const [h, m] = t.split(":").map(Number);
@@ -12,6 +12,8 @@
     const day = days[currentDayIndex];
     document.getElementById("dayinfo").innerText = day;
 
+    // Update variable now with live tracker
+    const now = new Date();
     const nowMin = now.getHours() * 60 + now.getMinutes();
 
     const container = document.getElementById("timetable");
@@ -60,8 +62,6 @@
 
   /* ================= LIVE TRACKING ================= */
   setInterval(renderDay, 60000);
-
-  /* ================= SERVICE WORKER ================= */
 
   renderDay();
   // 1. Find the first element with the 'active' class and scroll it into view

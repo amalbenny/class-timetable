@@ -99,10 +99,10 @@ main{ padding: 16px;}
 .elective{
     background-color: var(--elective); color: #333333;
 }
-.lab{
+.lab, .workshop{
     background-color: var(--lab);
 }
-.project{
+.project, .seminar, .other{
     background-color: var(--project);
 }
 .free, .sp, .break{

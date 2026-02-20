@@ -1,21 +1,21 @@
 {
-  "name": "TimeTable v2.0 - Mechanical Engineering Class Schedule",
+  "name": "TimeTable v2.2 - Mechanical Engineering Class Schedule",
   "short_name": "TimeTable",
   "icons": [
     {
-      "src": "/class-timetable/assets/web-app-manifest-192x192.png",
+      "src": "./web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/class-timetable/assets/web-app-manifest-512x512.png",
+      "src": "./web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#2c3e50",
   "background_color": "#ffffff",
   "display": "standalone",
   "categories": ["education", "productivity"]

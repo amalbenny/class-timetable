@@ -1,13 +1,16 @@
-const CACHE_NAME = 'timetable-v2';
+const CACHE_NAME = 'timetable-v2.2';
 const urlsToCache = [
   './',
-  '../index.html',
-  '../time-table.js',
-  './main.css',
-  './script.js',
+  './index.html',
+  './time-table.js',
+  './assets/main.css',
+  './assets/script.js',
   './sw.js',
- // './portrait.css',
- // './landscape.css'
+  './assets/favicon-96x96.png',
+  './assets/favicon.svg',
+  './assets/favicon.ico',
+  './assets/apple-touch-icon.png',
+  './assets/site.webmanifest'
 ];
 
 // Install event - cache essential files

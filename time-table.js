@@ -1,6 +1,11 @@
   /* ================= TIMETABLE DATA ================= */
 
-  // Note: Use lower case for type values: "theory", "elective", "project", "break", "sp", "free"
+  /*
+  Note: Use lower case for type values: "theory", "elective", "project",
+    "break", "sp", "free", "lab", "seminar", "workshop","other"
+  Note: You can add/edit days and time slots as needed,
+    but ensure the structure remains consistent for rendering purposes.
+  */
   const timetable = {
     Monday: [
       { start: "09:00", end: "09:50", subject: "MET404 – Comprehensive Viva", type: "theory" },
