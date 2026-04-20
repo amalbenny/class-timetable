@@ -2,7 +2,7 @@
 
 A responsive, Progressive Web App (PWA) for managing and viewing class schedules with real-time period tracking.
 ![Screenshot of TimeTable PWA](./src/assets/screenshot_360.jpg)
-
+![ Screenshot with Events and other Special Dates](./src/assets/GALAXY_A51_71_CT-2_5.png)
 
 ## Features
 
