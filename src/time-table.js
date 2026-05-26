@@ -65,17 +65,15 @@
   };
 
   const others = {
+    /*
     exams:[
       { subject: "MET402 – Mechatronics", date: "2026-04-20", time: "forenoon" },
       { subject: "Micro and Nano Manufacturing", date: "2026-04-23", time: "forenoon" },
       { subject: "Composite Materials", date: "2026-04-27", time: "forenoon" },
-      { subject: "Project Planning & Management", date: "2026-04-30", time: "forenoon" }
+      { subject: "Project Planning & Management", date: "2026-04-30", time: "forenoon" },
     ],
-    /*
+    */
     events:[
-      { name: "Project Phase II - Midterm Review", date: "2026-03-15" },
-      { name: "Project Phase II - Final Review", date: "2026-05-10" },
-      { name: "MET404 – Comprehensive Viva", date: "2026-06-01" }
-    ]
-      */
+      { name: "Merit Day", date: "2026-06-13" },
+    ],
   }
