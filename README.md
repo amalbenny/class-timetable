@@ -97,7 +97,7 @@ You have two ways to customize your timetable:
 Use the built-in editor (pencil button) to modify your schedule directly in the browser. No coding required! Your changes are automatically saved to local storage.
 
 ### Method 2: Edit Source Code
-For more advanced customization, edit the [time-table.js](time-table.js) file:
+For more advanced customization, edit the [time-table.js](src/time-table.js) file:
 
 ```javascript
 const timetable = {
